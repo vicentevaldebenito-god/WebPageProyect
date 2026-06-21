@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    background-color: rgb(24, 28, 31);
+}
+/* NAV Y HEADER*/
+
+.nav{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    border-bottom: 2px solid rgb(214, 169, 120);
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.nav_image img{
+    min-width: 10px;
+    min-height: 10px;
+    max-height: 100px;
+    max-width: 100px;
+    transition: transform 0.3s ease;
+}
+.nav_image img:hover{
+    transform: scale(1.1);
+}
+.nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color:white;
+    padding:7px;
+    transition: transform 0.3s ease;
+    display:inline-block;
+}
+
+.nav_links a:hover{
+    transform: scale(1.1);
+}
+
+/* FRONT PAGE WELCOME*/
+.Front_Welcome{
+    margin-top: 175px;
+    min-width: 700px;
+    min-height: 325px;
+    max-height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+    color: rgb(255, 251, 232);
+    box-shadow: 2px 4px 8px rgba(32, 32, 32, 0.76);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    border: 1px solid rgb(214, 169, 120);
+    gap: 5px;
+    padding: 15px;
+}
+
+.Front_Welcome:hover{
+    transform: scale(1.03) translateY(-10px);
+    box-shadow: 10px 16px 20px rgba(32, 32, 32, 0.76);
+}
+
+/* FRONT ABOUT US */
