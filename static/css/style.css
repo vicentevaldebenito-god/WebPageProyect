@@ -113,11 +113,19 @@ body{
     flex-wrap: wrap;
 }
 
-footer a {
+.footer a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    transition: transform 0.3s ease;
 }
+
+.footer a:hover {
+    color: rgb(214, 169, 120);
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
 /**************************** LOBOTOMY CORPORATION ***************************/
 
 .Lobotomy_nav{
@@ -173,6 +181,8 @@ footer a {
     background-size: cover;
     background-position: center;
     height: 760px;
+    border-bottom: 4px solid rgb(214, 169, 120);
+    border-top: 4px solid rgb(214, 169, 120);
 }
 
 .Lobotomy_Corporation_Description_Text{
@@ -184,6 +194,64 @@ footer a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height:60%;
+    width: 40%;
+    margin-left:auto;
+    margin-right:50px;
+    overflow:scroll;
+}
+.Lobotomy_Corporation_Abnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-image: url('../../static/images/Containment_Unit.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 760px;
+    border-bottom: 4px solid rgb(214, 169, 120);
+    border-top: 4px solid rgb(214, 169, 120);
+}
+
+.Lobotomy_Corporation_Abnos_Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+}
+
+.Lobotomy_Corporation_Abnos_Image img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease, border-color 1s ease;
+}
+
+.Lobotomy_Corporation_Abnos_Image img:hover{
+    transform: scale(1.1);
+    animation: rotation 1s infinite alternate ease-in-out;
+    border-color: rgb(214, 169, 120);
+}
+@keyframes rotation {
+    from { transform: rotate(-5deg); }
+    to   { transform: rotate(5deg); }
+}
+.Lobotomy_Corporation_Abnos_Text{
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    overflow:scroll;
     padding: 20px;
     border-radius: 10px;
     height:60%;
