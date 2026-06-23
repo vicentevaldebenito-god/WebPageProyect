@@ -59,14 +59,14 @@ body{
 
 .nav_links a:hover{
     transform: scale(1.1);
+    color: rgb(214, 169, 120);
 }
 
 /* FRONT PAGE WELCOME*/
 .Front_Welcome{
-    margin-top: 175px;
-    min-width: 700px;
-    min-height: 325px;
-    max-height: 725px;
+    margin: 220px;
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,19 +74,120 @@ body{
     align-items: center;
     text-align: center;
     background-color: rgb(7, 7, 7);
-    border-radius: 10px;
     color: rgb(255, 251, 232);
     box-shadow: 2px 4px 8px rgba(32, 32, 32, 0.76);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
-    border: 1px solid rgb(214, 169, 120);
-    gap: 5px;
+    border-bottom: 1px solid rgb(214, 169, 120);
+    border-top: 1px solid rgb(214, 169, 120);
+    gap: 80px;
     padding: 15px;
 }
 
-.Front_Welcome:hover{
-    transform: scale(1.03) translateY(-10px);
-    box-shadow: 10px 16px 20px rgba(32, 32, 32, 0.76);
+.Front_Welcome_Introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* FRONT ABOUT US */
+.Front_Welcome h1{
+    font-size: 55px;
+    text-shadow: 2px 2px 4px  rgb(214, 169, 120);
+}
+
+.Front_Welcome_Introduction p{
+    font-size: 20px;
+}
+
+/* FOOTER FRONT */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(214, 169, 120);
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/**************************** LOBOTOMY CORPORATION ***************************/
+
+.Lobotomy_nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 20px;
+    font-size:20px;
+    font-weight: light;
+}
+
+.Lobotomy_nav img{
+    max-width:500px;
+    max-height: 125px;
+}
+
+.nav_moto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125%;
+    background-color:rgb(252, 59, 58);
+    color:black;
+    height: 70px;
+    font-size:30px;
+    font-weight:lighter;
+}
+.Lobotomy_Corporation_Body{
+    background-color:#0F0F0F;
+    font-family:Norwester;
+}
+
+
+.Lobotomy_Corporation_Description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    background-image: url('../../static/images/Angela.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 760px;
+}
+
+.Lobotomy_Corporation_Description_Text{
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height:60%;
+    width: 40%;
+    margin-left:auto;
+    margin-right:50px;
+}
