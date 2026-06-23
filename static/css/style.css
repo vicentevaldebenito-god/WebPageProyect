@@ -151,7 +151,7 @@ body{
     max-height: 125px;
 }
 
-.nav_moto{
+.Lobotomy_moto{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +202,19 @@ body{
     margin-right:50px;
     overflow:scroll;
 }
+/* Estilo scrollbar */
+.Lobotomy_Corporation_Description_Text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Lobotomy_Corporation_Description_Text::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.Lobotomy_Corporation_Description_Text::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
 .Lobotomy_Corporation_Abnos{
     display: flex;
     justify-content: center;
@@ -218,6 +231,7 @@ body{
     border-bottom: 4px solid rgb(214, 169, 120);
     border-top: 4px solid rgb(214, 169, 120);
 }
+
 
 .Lobotomy_Corporation_Abnos_Image{
     display: flex;
@@ -258,4 +272,59 @@ body{
     width: 40%;
     margin-left:auto;
     margin-right:50px;
+}
+
+/* Estilo scrollbar */
+.Lobotomy_Corporation_Abnos_Text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Lobotomy_Corporation_Abnos_Text::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.Lobotomy_Corporation_Abnos_Text::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/****************** LIBRARY OF RUINA *******************/
+.Library_nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 20px;
+    font-size:20px;
+    font-weight: light;
+}
+
+.Library_nav img{
+    max-width:500px;
+    max-height: 125px;
+}
+
+.Library_moto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125%;
+    background-color:rgb(252, 225, 181);
+    color:black;
+    height: 70px;
+    font-size:30px;
+    font-weight:lighter;
+}   
+
+.Library_Body{
+    background-color:#0F0F0F;
+    font-family: Cinzel;
 }
